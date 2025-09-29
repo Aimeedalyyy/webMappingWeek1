@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'corsheaders',
     
     # Local apps
-    'maps',
+    'maps', # Week 1 
+    'spatial_data_app', # New app for week 2
+
 ]
 
 MIDDLEWARE = [
@@ -83,8 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'webmapping_db',
-        'USER': 'webmapping',
-        'PASSWORD': 'awm123',
+        'USER': 'aimeedaly',
         'HOST': 'localhost',
         'PORT': '5432',
     }

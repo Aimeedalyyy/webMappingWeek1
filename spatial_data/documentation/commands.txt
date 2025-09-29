@@ -1,0 +1,8 @@
+psql -h localhost -d webmapping_db -U aimeedaly -f spatial_data/sql_querie
+s/exploration.sql > spatial_data/documentation/exploration_results.txt
+
+# Execute spatial analysis
+psql -h localhost -d webmapping_db -U aimeedaly -f spatial_data/sql_queries/spatial_analysis.sql > spatial_data/documentation/spatial_analysis_results.txt
+
+# Execute advanced queries
+psql -h localhost -d webmapping_db -U aimeedaly -f spatial_data/sql_queries/advanced_queries.sql > spatial_data/documentation/advanced_results.txt
